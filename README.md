@@ -1,5 +1,7 @@
 # Storybook Addon for AngularJS (1.x)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/titonobre/storybook-addon-angularjs.svg)](https://greenkeeper.io/)
+
 ![npm](https://img.shields.io/npm/v/storybook-addon-angularjs.svg)
 ![npm](https://img.shields.io/npm/dt/storybook-addon-angularjs.svg)
 ![GitHub issues](https://img.shields.io/github/issues/titonobre/storybook-addon-angularjs.svg)
