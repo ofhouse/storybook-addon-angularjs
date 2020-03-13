@@ -22,3 +22,15 @@ export const Demo = forModule("myApp").createElement(compile => {
 
   return compile`<demo-component name="${name}" some-string="{{${someString}}}" foo="${foo}" things="${things}" on-event="${onEvt}(item)"></demo-component>`;
 });
+
+const mocks = {
+  globalService: {
+    getData() {
+      return 'Mocked Data!';
+    }
+  }
+}
+
+export const WithMocks = forModule("myApp", mocks).createElement(compile => {
+  return compile`<need-service-component></need-service-component>`
+})
