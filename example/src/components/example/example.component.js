@@ -12,6 +12,7 @@ const component = {
 
     <h1>Example Component</h1>
     
+    <h2>{{$ctrl.TEST}}</h2>
     <h2>Injected Service</h2>
     <div ng-click="$ctrl.clickSection('service')">{{$ctrl.appService.message}}</div>
     
@@ -38,10 +39,11 @@ const component = {
     slotB: "?slotB",
   },
   controller: class {
-    static $inject = ["AppService"];
+    static $inject = ["AppService", "TEST"];
 
-    constructor(appService) {
+    constructor(appService, TEST) {
       this.appService = appService;
+      this.TEST = TEST;
     }
 
     $onInit() {
