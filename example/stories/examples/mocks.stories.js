@@ -48,8 +48,10 @@ ServiceMock.story = {
     ng: {
       mock: {
         modules: ['external.module'],
-        inject: {
+        services: {
           AppService: MockAppService,
+        },
+        constants: {
           TEST: 'LOL'
         }
       }

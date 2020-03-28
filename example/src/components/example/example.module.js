@@ -5,4 +5,4 @@ import exampleComponent from "./example.component";
 export default angular
   .module("myApp.components.example", [])
   .component(...exampleComponent)
-  .constant('TEST', 'hello WOrld');
+  .constant("TEST", "hello WOrld");
